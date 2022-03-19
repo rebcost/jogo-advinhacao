@@ -1,10 +1,13 @@
-# 🎰 Jogo Advinhação 
+# 🎰 Jogo Adivinhação 
 
-
+<div> 
+    <img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white"></img>
+</div>
+![image](https://github.com/rebcost/jogo-advinhacao/blob/main/banner.png)
 
 ### Descrição
 
-![jogo-adivinhacao]()
+![jogo-adivinhacao](https://github.com/rebcost/jogo-advinhacao/blob/main/adivinhacao.png)
 
 Esse projeto tem como objetivo desenvolver um jogo de adivinhação em que o computador sorteia um número entre 1 e 99. O jogador dever acertar na menor quantidade tentativas possíveis para conseguir alcançar uma maior pontuação.
 
