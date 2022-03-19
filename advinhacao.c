@@ -59,7 +59,7 @@ int numero_secreto(){
 
 int chutar_numero(){
     int chute;
-    printf("Qual eh seu chute: ");
+    printf("Qual eh seu chute (1-99): ");
     scanf("%d",&chute);
     return chute;
 }
@@ -69,6 +69,7 @@ void testar_num_secreto(int num){
 }
 
 void mostrar_resultado(int acertou, double pontos){
+    system("clear");
     if(acertou){
         printf("             OOOOOOOOOOO               \n");
 		printf("         OOOOOOOOOOOOOOOOOOO           \n");
@@ -102,7 +103,7 @@ int escolherNivel(){
     int nivel;
     int totalTentativas;
     printf("Qual nível de dificuldade (1)Fácil (2)Médio (3)Difícil\n\n");
-    printf("Escolha: ");
+    printf("Escolha a dificuldade: ");
     scanf("%d",&nivel);
 
     switch (nivel){
@@ -113,8 +114,8 @@ int escolherNivel(){
     case 3:
         return totalTentativas = NIVEL_DIFICIL;
     default:
-        printf("Escolha apenas entre os valores (1), (2), (3)");
-        break;
+        printf("Escolha apenas entre os valores (1), (2), (3)\n");
+        return totalTentativas = -1;        
     }
 
 }
@@ -139,17 +140,28 @@ int main(int argc, char const *argv[]){
     do{      
     
         head(); // Exibe o cabeçalho do jogo 
-        totalTentativas = escolherNivel();
+
+        do{
+            totalTentativas = escolherNivel();
+        } while (totalTentativas == -1);       
+                   
         numerosecreto = numero_secreto();
 
         //testar_num_secreto(numerosecreto);
 
         for(int i=1; i<=totalTentativas; i++){
 
-            chute = chutar_numero();
+            // Verifica se o número informado é maior que número máximo permitido
+            do{
+                chute = chutar_numero();
+                if(chute > 99){
+                    printf("Você deve chutar um número entre (1 - 99)\n");
+                }else break;                                                    
+            } while (1);
+            
             printf("-> Tentativa %d de %d\n",i, totalTentativas);
                     
-            // Verifica se o número imformado é negativo
+            // Verifica se o número informado é negativo
             if(chute < 0){
                 printf("Você não pode chutar número negativos!\n");
                 i--;            
