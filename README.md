@@ -1,7 +1,7 @@
 # 🎰 Jogo Adivinhação 
 
 <div> 
-    <img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white"></img>
+    <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white"></img>
 </div>
 
 ![image](https://github.com/rebcost/jogo-advinhacao/blob/main/banner.png)
@@ -28,10 +28,16 @@ Vence o jogo se acertar o número sorteado. Senão é gamer over.
 
 
 
-​    Enjoy the game.
+👾   Enjoy the game.
 
 
 
 **Obs:** Esse projeto foi desenvolvido utilizando com referência o livro - Introdução à programação em C: Os primeiros passos de um desenvolvedor do autor Maurício Aniche.
 
 Acrescentei o meu conhecimento da Linguagem e adaptei algumas estruturas do código original.
+
+
+
+## Acesse Aqui 👇 
+
+https://replit.com/@rebcost/jogo-advinhacao#advinhacao.c
